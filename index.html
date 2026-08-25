@@ -38,6 +38,7 @@
     <link rel="preload" href="assets/hero-character.webp" as="image" type="image/webp" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script type="module" src="visitor-counter.js"></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -382,6 +383,10 @@
           <p class="eyebrow">SEE YOU IN LA NOSCEA!</p>
           <h2 id="closingTitle">우리, 라노시아에서<br />함께 걸어요!</h2>
           <p>반응이 좋다면 다음 감자데이도 다시 찾아올 예정입니다.</p>
+          <div class="visitor-counter" data-visitor-counter role="status" aria-live="polite" aria-busy="true">
+            <span class="visitor-potato" aria-hidden="true">🥔</span>
+            <span>지금까지 감자 <strong data-visitor-count>—</strong>명이 다녀갔어요!</span>
+          </div>
           <div class="closing-actions">
             <a
               class="button button-discord"

@@ -1362,6 +1362,36 @@ svg {
   font-weight: 700;
 }
 
+.visitor-counter {
+  display: inline-flex;
+  min-height: 48px;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 30px rgba(41, 114, 156, 0.12);
+  color: #265571;
+  font-size: 0.88rem;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+
+.visitor-counter strong {
+  color: var(--pink-dark);
+  font-family: "GimpoPeaceTitle", sans-serif;
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+.visitor-potato {
+  font-size: 1.2rem;
+  transform: rotate(-8deg);
+}
+
 .closing-content .eyebrow {
   color: #2f698b;
 }
