@@ -1,3 +1,20 @@
+/* 넥슨 메이플스토리체 © NEXON Korea */
+@font-face {
+  font-family: "NexonMaplestory";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NexonMaplestory";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --ink: #4a281e;
   --ink-soft: #744838;
@@ -31,7 +48,8 @@ body {
   min-width: 320px;
   background: var(--cream);
   color: var(--ink);
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 300;
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -160,9 +178,9 @@ svg {
 }
 
 .brand-copy strong {
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.01em;
 }
 
@@ -205,9 +223,9 @@ svg {
 
 .header-countdown strong {
   color: var(--pink-dark);
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
   font-size: 0.88rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
@@ -386,8 +404,8 @@ svg {
 
 .hero h1 {
   margin: 0;
-  font-family: "Jua", sans-serif;
-  font-weight: 400;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   line-height: 0.88;
   letter-spacing: -0.055em;
 }
@@ -408,7 +426,7 @@ svg {
   margin-top: 0.18em;
   color: var(--ink);
   font-size: clamp(3.25rem, 7.7vw, 7.2rem);
-  font-weight: 400;
+  font-weight: 700;
   -webkit-text-stroke: clamp(2px, 0.26vw, 4px) #fff8ed;
   filter: drop-shadow(0 6px 0 rgba(255, 255, 255, 0.52));
 }
@@ -579,7 +597,8 @@ svg {
 
 .welcome-bubble p {
   margin: 0;
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   font-size: 1.35rem;
   line-height: 1.4;
 }
@@ -725,9 +744,9 @@ svg {
 .poster-copy h2,
 .closing-content h2 {
   margin: 0;
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
   font-size: clamp(2.7rem, 5.5vw, 5.2rem);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.045em;
 }
@@ -752,7 +771,8 @@ svg {
   top: 1rem;
   right: 1.5rem;
   color: rgba(239, 113, 129, 0.16);
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   font-size: 5rem;
   line-height: 1;
 }
@@ -896,9 +916,9 @@ svg {
 }
 
 .info-card h3 strong {
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .info-card > p:last-of-type {
@@ -1129,7 +1149,8 @@ svg {
   border: 2px dashed var(--pink);
   border-radius: 50%;
   color: var(--pink);
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1;
   text-align: center;
@@ -1177,7 +1198,8 @@ svg {
 .timeline time {
   padding-top: 0.2rem;
   color: var(--pink-dark);
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   font-size: 1.15rem;
 }
 
@@ -1402,9 +1424,9 @@ svg {
 }
 
 .site-footer strong {
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
   font-size: 1.15rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .site-footer p {
