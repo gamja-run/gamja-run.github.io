@@ -1,3 +1,12 @@
+/* 넥슨 메이플스토리체 © NEXON Korea */
+@font-face {
+  font-family: "NexonMaplestory";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --ink: #4a281e;
   --ink-soft: #744838;
@@ -386,8 +395,8 @@ svg {
 
 .hero h1 {
   margin: 0;
-  font-family: "Jua", sans-serif;
-  font-weight: 400;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   line-height: 0.88;
   letter-spacing: -0.055em;
 }
@@ -408,7 +417,7 @@ svg {
   margin-top: 0.18em;
   color: var(--ink);
   font-size: clamp(3.25rem, 7.7vw, 7.2rem);
-  font-weight: 400;
+  font-weight: 700;
   -webkit-text-stroke: clamp(2px, 0.26vw, 4px) #fff8ed;
   filter: drop-shadow(0 6px 0 rgba(255, 255, 255, 0.52));
 }
@@ -579,7 +588,8 @@ svg {
 
 .welcome-bubble p {
   margin: 0;
-  font-family: "Jua", sans-serif;
+  font-family: "NexonMaplestory", sans-serif;
+  font-weight: 700;
   font-size: 1.35rem;
   line-height: 1.4;
 }
