@@ -23,7 +23,8 @@ const firebaseConfig = Object.freeze({
 const storageKey = "gamja-run:visitor-counted:v1";
 const productionHost = "gamja-run.github.io";
 const counter = document.querySelector("[data-visitor-counter]");
-const countOutput = counter?.querySelector("[data-visitor-count]");
+const counterDisplays = [...document.querySelectorAll("[data-visitor-display]")];
+const countOutputs = [...document.querySelectorAll("[data-visitor-count]")];
 
 function reserveFirstVisit() {
   try {
@@ -52,7 +53,7 @@ function releaseFirstVisit() {
 }
 
 async function loadVisitorCount() {
-  if (!counter || !countOutput) return;
+  if (!counter || countOutputs.length === 0) return;
 
   const app = initializeApp(firebaseConfig, "gamja-run-visitor-counter");
   if (location.hostname === productionHost) {
@@ -80,11 +81,19 @@ async function loadVisitorCount() {
 
     const snapshot = await getDoc(counterDocument);
     const count = snapshot.exists() ? snapshot.data().count : 0;
-    countOutput.textContent = new Intl.NumberFormat("ko-KR").format(Number(count) || 0);
+    const formattedCount = new Intl.NumberFormat("ko-KR").format(Number(count) || 0);
+    countOutputs.forEach((output) => {
+      output.textContent = formattedCount;
+    });
+    counterDisplays.forEach((display) => {
+      display.hidden = false;
+    });
     counter.setAttribute("aria-busy", "false");
   } catch (error) {
     if (firstVisit) releaseFirstVisit();
-    counter.hidden = true;
+    counterDisplays.forEach((display) => {
+      display.hidden = true;
+    });
     console.warn("방문자 수를 불러오지 못했습니다.", error);
   }
 }
