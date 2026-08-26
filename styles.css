@@ -274,6 +274,10 @@ svg {
   transform: scaleX(1);
 }
 
+.site-nav .nav-recruitment {
+  color: var(--green);
+}
+
 .nav-cta {
   display: inline-flex;
   min-height: 42px;
@@ -754,6 +758,7 @@ svg {
 .route-heading h2,
 .timeline-heading h2,
 .poster-copy h2,
+.recruitment-copy h2,
 .closing-content h2 {
   margin: 0;
   font-family: "GimpoPeaceTitle", sans-serif;
@@ -1339,6 +1344,125 @@ svg {
   margin-top: 2rem;
 }
 
+.recruitment-section {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(255, 214, 112, 0.24), transparent 26%),
+    radial-gradient(circle at 88% 80%, rgba(45, 139, 116, 0.13), transparent 30%),
+    #fffaf0;
+}
+
+.recruitment-section::before,
+.recruitment-section::after {
+  position: absolute;
+  color: rgba(45, 139, 116, 0.08);
+  font-size: 14rem;
+  line-height: 1;
+  content: "✿";
+}
+
+.recruitment-section::before {
+  top: -4rem;
+  left: -3rem;
+}
+
+.recruitment-section::after {
+  right: -3rem;
+  bottom: -6rem;
+  color: rgba(239, 113, 129, 0.08);
+  font-size: 11rem;
+}
+
+.recruitment-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.72fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+.recruitment-copy {
+  max-width: 590px;
+}
+
+.recruitment-badge {
+  display: inline-flex;
+  margin-bottom: 1.25rem;
+  padding: 0.45rem 0.75rem;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid rgba(45, 139, 116, 0.18);
+  border-radius: 999px;
+  background: rgba(45, 139, 116, 0.09);
+  color: var(--green);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.recruitment-copy h2 {
+  color: var(--ink);
+}
+
+.recruitment-copy > p:not(.eyebrow, .recruitment-note) {
+  max-width: 540px;
+  margin: 1.4rem 0 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.recruitment-roles {
+  display: flex;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  list-style: none;
+}
+
+.recruitment-roles li {
+  padding: 0.5rem 0.78rem;
+  border: 1px solid rgba(45, 139, 116, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.76);
+  color: #256f5d;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.recruitment-note {
+  display: flex;
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.1rem;
+  align-items: flex-start;
+  gap: 0.55rem;
+  border-left: 3px solid var(--pink);
+  border-radius: 0 14px 14px 0;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.recruitment-actions {
+  display: flex;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.recruitment-frame {
+  width: min(100%, 520px);
+  justify-self: end;
+  border: 1px solid rgba(45, 139, 116, 0.14);
+  background: #fffdf7;
+  box-shadow: 0 28px 70px rgba(74, 70, 40, 0.2);
+}
+
+.recruitment-frame::before {
+  background: rgba(176, 203, 146, 0.72);
+}
+
 .closing-section {
   position: relative;
   display: grid;
@@ -1543,6 +1667,10 @@ svg {
 
 .invitation-dialog {
   width: min(760px, calc(100% - 2rem));
+}
+
+.recruitment-dialog {
+  width: min(840px, calc(100% - 2rem));
 }
 
 .toast {
@@ -1833,7 +1961,8 @@ svg {
   .intro-grid,
   .route-heading,
   .timeline-layout,
-  .poster-layout {
+  .poster-layout,
+  .recruitment-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1930,6 +2059,36 @@ svg {
     margin-left: auto;
   }
 
+  .recruitment-layout {
+    gap: 3.5rem;
+  }
+
+  .recruitment-copy {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .recruitment-copy > p:not(.eyebrow, .recruitment-note) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .recruitment-roles,
+  .recruitment-actions {
+    justify-content: center;
+  }
+
+  .recruitment-note {
+    text-align: left;
+  }
+
+  .recruitment-frame {
+    width: min(460px, 92%);
+    margin: 0 auto;
+    justify-self: center;
+  }
+
   .closing-section {
     min-height: 560px;
   }
@@ -1946,13 +2105,15 @@ svg {
 
 @media (max-width: 520px) {
   .hero-actions,
-  .closing-actions {
+  .closing-actions,
+  .recruitment-actions {
     display: grid;
     grid-template-columns: 1fr;
   }
 
   .hero-actions .button,
-  .closing-actions .button {
+  .closing-actions .button,
+  .recruitment-actions .button {
     width: 100%;
   }
 
@@ -1972,7 +2133,8 @@ svg {
   .section-heading h2,
   .route-heading h2,
   .timeline-heading h2,
-  .poster-copy h2 {
+  .poster-copy h2,
+  .recruitment-copy h2 {
     font-size: 2.65rem;
   }
 }

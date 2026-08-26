@@ -141,3 +141,4 @@ function setupImageDialog(dialogSelector, openSelector, closeSelector) {
 
 setupImageDialog("#posterDialog", "[data-poster-open]", "[data-poster-close]");
 setupImageDialog("#invitationDialog", "[data-invitation-open]", "[data-invitation-close]");
+setupImageDialog("#recruitmentDialog", "[data-recruitment-open]", "[data-recruitment-close]");

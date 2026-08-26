@@ -79,6 +79,7 @@
         <a href="#info">행사 정보</a>
         <a href="#route">행진 안내</a>
         <a href="#timeline">타임라인</a>
+        <a class="nav-recruitment" href="#recruitment">요원 모집</a>
         <a
           class="nav-cta"
           href="https://discord.gg/Qdew4FaaSQ"
@@ -379,6 +380,58 @@
         </div>
       </section>
 
+      <section class="recruitment-section section" id="recruitment" aria-labelledby="recruitmentTitle">
+        <div class="section-shell recruitment-layout">
+          <div class="recruitment-copy" data-reveal>
+            <p class="eyebrow">CREW WANTED</p>
+            <span class="recruitment-badge"><span aria-hidden="true">✦</span> 진행요원 모집 중</span>
+            <h2 id="recruitmentTitle">함께 굴러갈<br />감자 요원을 찾아요!</h2>
+            <p>
+              라라펠들의 귀여운 대행진을 함께 만들어갈 진행요원을 모집합니다.
+              처음이어도 괜찮아요. 작은 열정과 배려만 챙겨 와 주세요!
+            </p>
+            <ul class="recruitment-roles" aria-label="모집 분야">
+              <li>진행 리더</li>
+              <li>사진작가</li>
+              <li>길안내</li>
+              <li>대열 관리</li>
+              <li>공지 전달</li>
+            </ul>
+            <p class="recruitment-note">
+              <span aria-hidden="true">✉</span>
+              자세한 역할과 모집 인원은 포스터에서 확인하고, 지원 및 문의는 주최자에게 DM 주세요.
+            </p>
+            <div class="recruitment-actions">
+              <button class="button button-dark" type="button" data-recruitment-open>
+                모집 포스터 크게 보기
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5h11v11M19 5 7 17M5 8v11h11" /></svg>
+              </button>
+              <a
+                class="button button-discord"
+                href="https://discord.gg/Qdew4FaaSQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Discord에서 문의하기
+              </a>
+            </div>
+          </div>
+
+          <div class="poster-frame recruitment-frame" data-reveal>
+            <button type="button" data-recruitment-open aria-label="진행요원 모집 포스터 크게 보기">
+              <img
+                src="assets/staff-recruitment.webp"
+                alt="진행 리더, 사진작가, 길안내, 대열 관리, 공지 전달 요원의 역할과 모집 인원이 담긴 감자데이 진행요원 모집 포스터"
+                width="1122"
+                height="1402"
+                loading="lazy"
+              />
+              <span>크게 보기 <b aria-hidden="true">↗</b></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section class="closing-section" aria-labelledby="closingTitle">
         <div class="closing-cloud cloud-one" aria-hidden="true"></div>
         <div class="closing-cloud cloud-two" aria-hidden="true"></div>
@@ -445,8 +498,22 @@
       <img
         src="assets/invitation.webp"
         alt="감자들에게 보내는 감자데이 대행진 이벤트 초대장"
-        width="1079"
-        height="1440"
+        width="808"
+        height="1080"
+        loading="lazy"
+      />
+    </dialog>
+
+    <dialog class="poster-dialog recruitment-dialog" id="recruitmentDialog" aria-labelledby="recruitmentDialogTitle">
+      <div class="dialog-toolbar">
+        <h2 id="recruitmentDialogTitle">감자데이 진행요원 모집</h2>
+        <button type="button" data-recruitment-close aria-label="모집 포스터 닫기">×</button>
+      </div>
+      <img
+        src="assets/staff-recruitment.webp"
+        alt="감자데이 진행요원 모집 포스터"
+        width="1122"
+        height="1402"
         loading="lazy"
       />
     </dialog>
