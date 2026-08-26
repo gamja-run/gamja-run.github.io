@@ -1377,13 +1377,15 @@ svg {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.72fr);
+  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1fr);
   align-items: center;
   gap: clamp(3rem, 8vw, 7rem);
 }
 
 .recruitment-copy {
-  max-width: 590px;
+  max-width: 650px;
+  grid-row: 1;
+  grid-column: 2;
 }
 
 .recruitment-badge {
@@ -1452,8 +1454,10 @@ svg {
 }
 
 .recruitment-frame {
-  width: min(100%, 520px);
-  justify-self: end;
+  width: min(100%, 390px);
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
   border: 1px solid rgba(45, 139, 116, 0.14);
   background: #fffdf7;
   box-shadow: 0 28px 70px rgba(74, 70, 40, 0.2);
@@ -2066,6 +2070,8 @@ svg {
   .recruitment-copy {
     max-width: 620px;
     margin: 0 auto;
+    grid-row: auto;
+    grid-column: auto;
     text-align: center;
   }
 
@@ -2084,8 +2090,10 @@ svg {
   }
 
   .recruitment-frame {
-    width: min(460px, 92%);
+    width: min(360px, 88%);
     margin: 0 auto;
+    grid-row: auto;
+    grid-column: auto;
     justify-self: center;
   }
 
