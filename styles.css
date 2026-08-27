@@ -1,20 +1,4 @@
 @font-face {
-  font-family: "SchoolSafetyChalkboardEraser";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimChilpanjiugaeTTF-L.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SchoolSafetyChalkboardEraser";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimChilpanjiugaeTTF-B.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "SchoolSafetyAquariumDecor";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/HakgyoansimEohangkkumigiB.woff2") format("woff2");
   font-style: normal;
@@ -62,7 +46,7 @@ body {
   background-position: 0 0, 0 8px, 8px -8px, -8px 0;
   background-size: 16px 16px;
   color: #111;
-  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -111,7 +95,7 @@ a {
   z-index: -1;
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
 }
@@ -156,7 +140,7 @@ a {
   border: 1px solid white;
   background: white;
   color: var(--title-blue);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -243,7 +227,7 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: #f4f4f4;
   color: #111;
-  font-family: "Consolas", "Cascadia Mono", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -290,7 +274,7 @@ a {
 .file-path {
   margin: 0 0 0.65rem;
   color: #333;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
 }
 
@@ -303,7 +287,7 @@ a {
   border: 2px inset white;
   background: black;
   color: var(--terminal-green);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
 }
 
@@ -317,14 +301,14 @@ a {
 .bbs-label {
   margin: 0 0 1rem;
   color: var(--title-blue);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
 }
 
 .hero h1 {
   margin: 0;
-  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: clamp(3.8rem, 7vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.035em;
@@ -350,7 +334,7 @@ a {
 .prompt-line {
   margin: 1.2rem 0 0;
   color: #222;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.76rem;
 }
 
@@ -383,7 +367,7 @@ a {
   box-shadow: 1px 1px 0 black;
   color: black;
   cursor: pointer;
-  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
 }
@@ -425,7 +409,7 @@ a {
   overflow: hidden;
   background: var(--title-blue);
   color: white;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
   text-overflow: ellipsis;
@@ -439,7 +423,7 @@ a {
   border: 2px solid;
   border-color: var(--window-dark) white white var(--window-dark);
   background: white;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "Consolas", "Courier New", monospace;
   font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-weight: 700;
   line-height: 1.35;
@@ -471,7 +455,7 @@ a {
 .summary-box legend {
   padding: 0 0.5rem;
   color: var(--title-blue);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -492,7 +476,7 @@ a {
 
 .summary-box dt {
   color: var(--red);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -500,7 +484,7 @@ a {
 .summary-box dd {
   margin: 0.25rem 0 0;
   color: #000;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.86rem;
   font-weight: 900;
 }
@@ -514,7 +498,7 @@ a {
 .bbs-heading p {
   margin: 0 0 0.5rem;
   color: var(--red);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -523,7 +507,7 @@ a {
 .recruitment-content h2,
 .terminal-content h2 {
   margin: 0;
-  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: clamp(2rem, 4.5vw, 3.8rem);
   font-weight: 900;
   letter-spacing: -0.025em;
@@ -533,8 +517,9 @@ a {
 .bbs-heading > span {
   display: block;
   margin-top: 0.75rem;
-  color: #333;
-  font-size: 0.76rem;
+  color: #222;
+  font-size: 0.88rem;
+  font-weight: 700;
 }
 
 .info-grid {
@@ -621,33 +606,33 @@ a {
   left: calc(100% + 0.15rem);
   color: var(--title-blue);
   content: "===>";
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
-  font-size: 0.72rem;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-size: 0.9rem;
   transform: translateY(-50%);
 }
 
 .route-list li > span {
   color: var(--red);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
-  font-size: 0.72rem;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-size: 0.85rem;
   font-weight: 900;
 }
 
 .route-list strong {
   color: #000;
-  font-size: 0.92rem;
+  font-size: 1.15rem;
   font-weight: 700;
 }
 
 .route-list small {
   color: #222;
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   font-weight: 700;
 }
 
 .system-message {
   margin-top: 2rem;
-  padding: 0.9rem 1rem;
+  padding: 1.1rem 1.2rem;
   border: 2px solid;
   border-color: white black black white;
   outline: 1px solid var(--window-dark);
@@ -657,16 +642,16 @@ a {
 
 .system-message strong {
   color: #680000;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
-  font-size: 0.84rem;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-size: 1rem;
   font-weight: 900;
   letter-spacing: 0.03em;
 }
 
 .system-message p {
-  margin: 0.4rem 0 0;
+  margin: 0.55rem 0 0;
   color: #111;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 700;
 }
 
@@ -687,14 +672,14 @@ a {
 
 .timeline time {
   color: var(--red);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.76rem;
   font-weight: 900;
 }
 
 .timeline li span {
   color: var(--title-blue);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -753,7 +738,7 @@ a {
 .role-list li {
   padding: 0.35rem 0;
   border-bottom: 1px dotted #777;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.75rem;
   font-weight: 800;
 }
@@ -773,8 +758,8 @@ a {
   padding: 4px 7px;
   background: #222;
   color: white;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
-  font-size: 0.72rem;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-size: 0.85rem;
 }
 
 .terminal-content {
@@ -784,18 +769,18 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: var(--terminal);
   color: var(--terminal-green);
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
 }
 
 .terminal-content > p {
   margin: 0.3rem 0;
-  font-size: 0.7rem;
+  font-size: 0.82rem;
 }
 
 .terminal-content h2 {
   margin-top: 3rem;
   color: white;
-  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   text-shadow: 3px 3px 0 #006600;
 }
@@ -805,7 +790,7 @@ a {
   margin-top: 1.5rem;
   padding: 0.45rem 0.65rem;
   border: 1px solid var(--terminal-green);
-  font-size: 0.76rem;
+  font-size: 0.9rem;
 }
 
 .visitor-counter strong {
@@ -820,8 +805,8 @@ a {
 
 .cheer-console-header {
   display: flex;
-  min-height: 34px;
-  padding: 0.35rem 0.55rem;
+  min-height: 42px;
+  padding: 0.55rem 0.75rem;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -832,8 +817,8 @@ a {
 .cheer-console-header h3 {
   margin: 0;
   color: white;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
-  font-size: 0.72rem;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-size: 0.95rem;
   text-shadow: none;
 }
 
@@ -846,7 +831,7 @@ a {
   color: var(--terminal-green);
   cursor: pointer;
   font-family: inherit;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 900;
 }
 
@@ -870,27 +855,27 @@ a {
 .cheer-log {
   min-height: 190px;
   max-height: 360px;
-  padding: 1rem;
+  padding: 1.2rem;
   overflow-y: auto;
   scrollbar-color: var(--terminal-green) black;
 }
 
 .cheer-empty {
   margin: 0;
-  color: #7cbe7c;
-  font-size: 0.7rem;
+  color: #a7d8a7;
+  font-size: 0.9rem;
 }
 
 .cheer-list {
   display: grid;
   margin: 0;
   padding: 0;
-  gap: 0.55rem;
+  gap: 0.75rem;
   list-style: none;
 }
 
 .cheer-item {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.65rem;
   border-bottom: 1px dotted #176d2a;
 }
 
@@ -898,12 +883,12 @@ a {
   display: grid;
   grid-template-columns: auto auto minmax(0, 1fr) auto;
   align-items: baseline;
-  gap: 0.35rem 0.6rem;
-  font-size: 0.72rem;
+  gap: 0.4rem 0.7rem;
+  font-size: 0.95rem;
 }
 
 .cheer-line time {
-  color: #7cbe7c;
+  color: #a7d8a7;
   font-variant-numeric: tabular-nums;
 }
 
@@ -918,8 +903,8 @@ a {
 }
 
 .cheer-hide-button {
-  color: #7cbe7c;
-  font-size: 0.72rem;
+  color: #a7d8a7;
+  font-size: 0.8rem;
   white-space: nowrap;
 }
 
@@ -929,19 +914,19 @@ a {
 
 .cheer-prompt {
   display: grid;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1.2rem;
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 0.6rem;
   color: white;
-  font-size: 0.72rem;
+  font-size: 1rem;
   font-weight: 900;
 }
 
 .cheer-prompt input {
   width: 100%;
   min-width: 0;
-  padding: 0.45rem 0.55rem;
+  padding: 0.65rem 0.7rem;
   border: 0;
   border-bottom: 1px solid var(--terminal-green);
   outline: 0;
@@ -962,12 +947,12 @@ a {
 
 .cheer-form-statusbar {
   display: grid;
-  padding: 0.45rem 1rem;
+  padding: 0.6rem 1.2rem;
   grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 0.8rem;
   border-top: 1px dotted #176d2a;
-  color: #7cbe7c;
-  font-size: 0.72rem;
+  color: #a7d8a7;
+  font-size: 0.82rem;
 }
 
 .cheer-form-statusbar [data-tone="error"] {
@@ -980,16 +965,16 @@ a {
 
 .cheer-policy {
   margin: 0 !important;
-  padding: 0.55rem 1rem 0.75rem;
-  color: #568756;
-  font-size: 0.72rem !important;
+  padding: 0.7rem 1.2rem 0.9rem;
+  color: #82aa82;
+  font-size: 0.8rem !important;
 }
 
 .terminal-button {
   padding-bottom: 2px;
   border-bottom: 1px solid currentColor;
   color: white;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 900;
 }
 
@@ -1016,7 +1001,7 @@ a {
 
 .readme-content h2 {
   margin: 0;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.88rem;
 }
 
@@ -1049,7 +1034,7 @@ a {
   padding: 0.8rem;
   border: 1px solid black;
   background: white;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 800;
 }
@@ -1080,7 +1065,7 @@ a {
 .copyright {
   margin: 0.5rem 0 0;
   color: white;
-  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   text-align: right;
 }
@@ -1319,6 +1304,19 @@ a {
 
   .header-visitor-count {
     display: none !important;
+  }
+
+  .cheer-prompt {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .cheer-form-statusbar {
+    grid-template-columns: 1fr auto;
+  }
+
+  .cheer-form-statusbar [data-cheer-status] {
+    grid-column: 1 / -1;
   }
 
   .text-mode-badge {
