@@ -343,8 +343,7 @@ a {
   font-size: 0.76rem;
 }
 
-.prompt-line span,
-.terminal-prompt span {
+.prompt-line span {
   animation: blink 0.8s steps(1, end) infinite;
 }
 
@@ -976,10 +975,6 @@ a {
 .terminal-button:hover {
   background: var(--terminal-green);
   color: black;
-}
-
-.terminal-prompt {
-  margin-top: 2.5rem !important;
 }
 
 .site-footer {
