@@ -1,4 +1,20 @@
 @font-face {
+  font-family: "SchoolSafetyChalkboardEraser";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimChilpanjiugaeTTF-L.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SchoolSafetyChalkboardEraser";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimChilpanjiugaeTTF-B.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "SchoolSafetyAquariumDecor";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/HakgyoansimEohangkkumigiB.woff2") format("woff2");
   font-style: normal;
@@ -46,7 +62,8 @@ body {
   background-position: 0 0, 0 8px, 8px -8px, -8px 0;
   background-size: 16px 16px;
   color: #111;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-synthesis: none;
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -95,7 +112,7 @@ a {
   z-index: -1;
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
 }
@@ -140,7 +157,7 @@ a {
   border: 1px solid white;
   background: white;
   color: var(--title-blue);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -227,7 +244,7 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: #f4f4f4;
   color: #111;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -274,7 +291,7 @@ a {
 .file-path {
   margin: 0 0 0.65rem;
   color: #333;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
 }
 
@@ -287,7 +304,7 @@ a {
   border: 2px inset white;
   background: black;
   color: var(--terminal-green);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
 }
 
@@ -301,14 +318,14 @@ a {
 .bbs-label {
   margin: 0 0 1rem;
   color: var(--title-blue);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
 }
 
 .hero h1 {
   margin: 0;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: clamp(3.8rem, 7vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.035em;
@@ -334,7 +351,7 @@ a {
 .prompt-line {
   margin: 1.2rem 0 0;
   color: #222;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.76rem;
 }
 
@@ -367,7 +384,7 @@ a {
   box-shadow: 1px 1px 0 black;
   color: black;
   cursor: pointer;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
 }
@@ -409,7 +426,7 @@ a {
   overflow: hidden;
   background: var(--title-blue);
   color: white;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
   text-overflow: ellipsis;
@@ -455,7 +472,7 @@ a {
 .summary-box legend {
   padding: 0 0.5rem;
   color: var(--title-blue);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -476,7 +493,7 @@ a {
 
 .summary-box dt {
   color: var(--red);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -484,7 +501,7 @@ a {
 .summary-box dd {
   margin: 0.25rem 0 0;
   color: #000;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.86rem;
   font-weight: 900;
 }
@@ -498,7 +515,7 @@ a {
 .bbs-heading p {
   margin: 0 0 0.5rem;
   color: var(--red);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -507,7 +524,7 @@ a {
 .recruitment-content h2,
 .terminal-content h2 {
   margin: 0;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: clamp(2rem, 4.5vw, 3.8rem);
   font-weight: 900;
   letter-spacing: -0.025em;
@@ -606,14 +623,14 @@ a {
   left: calc(100% + 0.15rem);
   color: var(--title-blue);
   content: "===>";
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.9rem;
   transform: translateY(-50%);
 }
 
 .route-list li > span {
   color: var(--red);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.85rem;
   font-weight: 900;
 }
@@ -642,7 +659,7 @@ a {
 
 .system-message strong {
   color: #680000;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 1rem;
   font-weight: 900;
   letter-spacing: 0.03em;
@@ -672,14 +689,14 @@ a {
 
 .timeline time {
   color: var(--red);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.76rem;
   font-weight: 900;
 }
 
 .timeline li span {
   color: var(--title-blue);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -738,7 +755,7 @@ a {
 .role-list li {
   padding: 0.35rem 0;
   border-bottom: 1px dotted #777;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.75rem;
   font-weight: 800;
 }
@@ -758,7 +775,7 @@ a {
   padding: 4px 7px;
   background: #222;
   color: white;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.85rem;
 }
 
@@ -769,7 +786,7 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: var(--terminal);
   color: var(--terminal-green);
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
 }
 
 .terminal-content > p {
@@ -780,7 +797,7 @@ a {
 .terminal-content h2 {
   margin-top: 3rem;
   color: white;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   text-shadow: 3px 3px 0 #006600;
 }
@@ -817,7 +834,7 @@ a {
 .cheer-console-header h3 {
   margin: 0;
   color: white;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.95rem;
   text-shadow: none;
 }
@@ -1001,7 +1018,7 @@ a {
 
 .readme-content h2 {
   margin: 0;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.88rem;
 }
 
@@ -1034,7 +1051,7 @@ a {
   padding: 0.8rem;
   border: 1px solid black;
   background: white;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 800;
 }
@@ -1065,7 +1082,7 @@ a {
 .copyright {
   margin: 0.5rem 0 0;
   color: white;
-  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   text-align: right;
 }
