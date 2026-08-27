@@ -1376,16 +1376,17 @@ svg {
 .recruitment-layout {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(3rem, 8vw, 7rem);
 }
 
 .recruitment-copy {
-  max-width: 650px;
-  grid-row: 1;
-  grid-column: 2;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.8rem);
+  border: 1px solid rgba(45, 139, 116, 0.13);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 24px 65px rgba(74, 70, 40, 0.1);
+  text-align: center;
 }
 
 .recruitment-badge {
@@ -1408,7 +1409,7 @@ svg {
 
 .recruitment-copy > p:not(.eyebrow, .recruitment-note) {
   max-width: 540px;
-  margin: 1.4rem 0 0;
+  margin: 1.4rem auto 0;
   color: var(--ink-soft);
   font-size: 1rem;
 }
@@ -1418,6 +1419,7 @@ svg {
   margin: 1.6rem 0 0;
   padding: 0;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.55rem;
   list-style: none;
 }
@@ -1444,27 +1446,15 @@ svg {
   color: var(--ink-soft);
   font-size: 0.8rem;
   font-weight: 600;
+  text-align: left;
 }
 
 .recruitment-actions {
   display: flex;
   margin-top: 1.8rem;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
-}
-
-.recruitment-frame {
-  width: min(100%, 390px);
-  grid-row: 1;
-  grid-column: 1;
-  justify-self: start;
-  border: 1px solid rgba(45, 139, 116, 0.14);
-  background: #fffdf7;
-  box-shadow: 0 28px 70px rgba(74, 70, 40, 0.2);
-}
-
-.recruitment-frame::before {
-  background: rgba(176, 203, 146, 0.72);
 }
 
 .closing-section {
@@ -1671,10 +1661,6 @@ svg {
 
 .invitation-dialog {
   width: min(760px, calc(100% - 2rem));
-}
-
-.recruitment-dialog {
-  width: min(840px, calc(100% - 2rem));
 }
 
 .toast {
@@ -1965,8 +1951,7 @@ svg {
   .intro-grid,
   .route-heading,
   .timeline-layout,
-  .poster-layout,
-  .recruitment-layout {
+  .poster-layout {
     grid-template-columns: 1fr;
   }
 
@@ -2063,15 +2048,9 @@ svg {
     margin-left: auto;
   }
 
-  .recruitment-layout {
-    gap: 3.5rem;
-  }
-
   .recruitment-copy {
     max-width: 620px;
     margin: 0 auto;
-    grid-row: auto;
-    grid-column: auto;
     text-align: center;
   }
 
@@ -2087,14 +2066,6 @@ svg {
 
   .recruitment-note {
     text-align: left;
-  }
-
-  .recruitment-frame {
-    width: min(360px, 88%);
-    margin: 0 auto;
-    grid-row: auto;
-    grid-column: auto;
-    justify-self: center;
   }
 
   .closing-section {
