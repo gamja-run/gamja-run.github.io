@@ -1,14 +1,22 @@
 @font-face {
-  font-family: "Cafe24Ssurround";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-family: "SchoolSafetyChalkboardEraser";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimChilpanjiugaeTTF-L.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Cafe24SsurroundAir";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+  font-family: "SchoolSafetyChalkboardEraser";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimChilpanjiugaeTTF-B.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SchoolSafetyAquariumDecor";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/HakgyoansimEohangkkumigiB.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -54,7 +62,7 @@ body {
   background-position: 0 0, 0 8px, 8px -8px, -8px 0;
   background-size: 16px 16px;
   color: #111;
-  font-family: "Cafe24SsurroundAir", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -103,7 +111,7 @@ a {
   z-index: -1;
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
 }
@@ -148,7 +156,7 @@ a {
   border: 1px solid white;
   background: white;
   color: var(--title-blue);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.55rem;
   font-weight: 900;
 }
@@ -202,7 +210,10 @@ a {
   padding: 0.35rem 0.55rem;
   border: 1px solid transparent;
   background: transparent;
-  font-size: 0.69rem;
+  font-family: "SchoolSafetyAquariumDecor", "Malgun Gothic", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .site-nav a:hover,
@@ -232,7 +243,7 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: #f4f4f4;
   color: #111;
-  font-family: "Consolas", "Cascadia Mono", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "Cascadia Mono", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.8rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -279,7 +290,7 @@ a {
 .file-path {
   margin: 0 0 0.65rem;
   color: #555;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.65rem;
 }
 
@@ -292,7 +303,7 @@ a {
   border: 2px inset white;
   background: black;
   color: var(--terminal-green);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.63rem;
 }
 
@@ -306,14 +317,14 @@ a {
 .bbs-label {
   margin: 0 0 1rem;
   color: var(--title-blue);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.7rem;
   font-weight: 900;
 }
 
 .hero h1 {
   margin: 0;
-  font-family: "Cafe24Ssurround", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: clamp(3.8rem, 7vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.035em;
@@ -339,7 +350,7 @@ a {
 .prompt-line {
   margin: 1.2rem 0 0;
   color: #444;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.76rem;
 }
 
@@ -372,7 +383,7 @@ a {
   box-shadow: 1px 1px 0 black;
   color: black;
   cursor: pointer;
-  font-family: "Cafe24SsurroundAir", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
 }
@@ -414,7 +425,7 @@ a {
   overflow: hidden;
   background: var(--title-blue);
   color: white;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.65rem;
   font-weight: 900;
   text-overflow: ellipsis;
@@ -428,7 +439,7 @@ a {
   border: 2px solid;
   border-color: var(--window-dark) white white var(--window-dark);
   background: white;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-weight: 700;
   line-height: 1.35;
@@ -460,7 +471,7 @@ a {
 .summary-box legend {
   padding: 0 0.5rem;
   color: var(--title-blue);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.67rem;
   font-weight: 900;
 }
@@ -481,14 +492,14 @@ a {
 
 .summary-box dt {
   color: var(--red);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.58rem;
   font-weight: 900;
 }
 
 .summary-box dd {
   margin: 0.25rem 0 0;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.78rem;
   font-weight: 800;
 }
@@ -502,7 +513,7 @@ a {
 .bbs-heading p {
   margin: 0 0 0.5rem;
   color: var(--red);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.62rem;
   font-weight: 900;
 }
@@ -511,7 +522,7 @@ a {
 .recruitment-content h2,
 .terminal-content h2 {
   margin: 0;
-  font-family: "Cafe24Ssurround", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: clamp(2rem, 4.5vw, 3.8rem);
   font-weight: 900;
   letter-spacing: -0.025em;
@@ -607,14 +618,14 @@ a {
   left: calc(100% + 0.15rem);
   color: var(--title-blue);
   content: "===>";
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.72rem;
   transform: translateY(-50%);
 }
 
 .route-list li > span {
   color: var(--red);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -640,7 +651,7 @@ a {
 
 .system-message strong {
   color: var(--red);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.68rem;
 }
 
@@ -666,14 +677,14 @@ a {
 
 .timeline time {
   color: var(--red);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.76rem;
   font-weight: 900;
 }
 
 .timeline li span {
   color: var(--title-blue);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.6rem;
   font-weight: 900;
 }
@@ -732,7 +743,7 @@ a {
 .role-list li {
   padding: 0.35rem 0;
   border-bottom: 1px dotted #777;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.75rem;
   font-weight: 800;
 }
@@ -752,7 +763,7 @@ a {
   padding: 4px 7px;
   background: #222;
   color: white;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.66rem;
 }
 
@@ -763,7 +774,7 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: var(--terminal);
   color: var(--terminal-green);
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
 }
 
 .terminal-content > p {
@@ -774,7 +785,7 @@ a {
 .terminal-content h2 {
   margin-top: 3rem;
   color: white;
-  font-family: "Cafe24Ssurround", "Malgun Gothic", sans-serif;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   text-shadow: 3px 3px 0 #006600;
 }
@@ -811,7 +822,7 @@ a {
 .cheer-console-header h3 {
   margin: 0;
   color: white;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.72rem;
   text-shadow: none;
 }
@@ -995,7 +1006,7 @@ a {
 
 .readme-content h2 {
   margin: 0;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.88rem;
 }
 
@@ -1028,7 +1039,7 @@ a {
   padding: 0.8rem;
   border: 1px solid black;
   background: white;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.68rem;
   font-weight: 800;
 }
@@ -1059,7 +1070,7 @@ a {
 .copyright {
   margin: 0.5rem 0 0;
   color: white;
-  font-family: "Consolas", "Cafe24SsurroundAir", monospace;
+  font-family: "Consolas", "SchoolSafetyChalkboardEraser", monospace;
   font-size: 0.55rem;
   text-align: right;
 }
