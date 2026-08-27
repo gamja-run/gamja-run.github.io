@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <script type="module" src="visitor-counter.js"></script>
+    <script type="module" src="cheer-board.js"></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -77,6 +78,7 @@
           <a href="#route">행진 안내(R)</a>
           <a href="#timeline">타임라인(T)</a>
           <a href="#recruitment">요원 모집(S)</a>
+          <a href="#cheers">응원(C)</a>
           <a href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">Discord(D)</a>
         </nav>
 
@@ -263,7 +265,7 @@
         </div>
       </section>
 
-      <section class="terminal-section" aria-labelledby="closingTitle">
+      <section class="terminal-section" id="cheers" aria-labelledby="closingTitle">
         <div class="terminal-title">C:\GAMJA_RUN&gt; gamja-run.exe</div>
         <div class="terminal-content">
           <p>Initializing Lalafell Parade ................................ [ OK ]</p>
@@ -281,6 +283,44 @@
           >
             &gt; 지금까지 감자 <strong data-visitor-count>—</strong>명이 다녀갔습니다.
           </div>
+
+          <section class="cheer-console" aria-labelledby="cheerTitle">
+            <div class="cheer-console-header">
+              <h3 id="cheerTitle">CHEER_LOG.TXT</h3>
+              <button class="cheer-refresh-button" type="button" data-cheer-refresh>[ 새 글 확인 ]</button>
+            </div>
+
+            <div class="cheer-log" data-cheer-log>
+              <p class="cheer-empty" data-cheer-empty>&gt; 아직 등록된 응원이 없습니다.</p>
+              <ol class="cheer-list" data-cheer-list aria-live="polite" aria-busy="true"></ol>
+            </div>
+
+            <form class="cheer-form" data-cheer-form>
+              <label class="cheer-prompt">
+                <span>C:\GAMJA_RUN&gt;</span>
+                <input
+                  type="text"
+                  name="cheer"
+                  maxlength="60"
+                  autocomplete="off"
+                  placeholder="응원의 글을 입력하세요"
+                  aria-label="응원의 글"
+                  data-cheer-input
+                  required
+                />
+              </label>
+              <div class="cheer-form-statusbar">
+                <span role="status" aria-live="polite" data-cheer-status>익명으로 안전하게 등록됩니다.</span>
+                <span data-cheer-length>0 / 60</span>
+                <button class="cheer-submit-button" type="submit" data-cheer-submit>[ 전송 ]</button>
+              </div>
+            </form>
+
+            <p class="cheer-policy">
+              ※ 30초에 한 번 · 최대 60자 · 링크와 연락처 입력 금지 · 불편한 글은 [ 가리기 ]
+            </p>
+          </section>
+
           <div class="closing-actions">
             <a class="terminal-button" href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">
               [ DISCORD 접속 ]

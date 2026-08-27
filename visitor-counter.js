@@ -1,27 +1,13 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-import {
-  initializeAppCheck,
-  ReCaptchaEnterpriseProvider,
-} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app-check.js";
 import {
   doc,
   getDoc,
-  getFirestore,
   increment,
   serverTimestamp,
   setDoc,
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
-
-const firebaseConfig = Object.freeze({
-  apiKey: "AIzaSyCkCJh5iMqIFULqVMFzbi_MAH-O0XCt-pg",
-  authDomain: "dogoo-a697f.firebaseapp.com",
-  projectId: "dogoo-a697f",
-  appId: "1:9622978431:web:7a85175c40a7dc0cf4244a",
-  appCheckSiteKey: "6Lcx5VotAAAAAGuZCQIzsK3aCOXZXkVzXYsDvqVw",
-});
+import { database, productionHost } from "./firebase-client.js";
 
 const storageKey = "gamja-run:visitor-counted:v1";
-const productionHost = "gamja-run.github.io";
 const counter = document.querySelector("[data-visitor-counter]");
 const counterDisplays = [...document.querySelectorAll("[data-visitor-display]")];
 const countOutputs = [...document.querySelectorAll("[data-visitor-count]")];
@@ -55,14 +41,6 @@ function releaseFirstVisit() {
 async function loadVisitorCount() {
   if (!counter || countOutputs.length === 0) return;
 
-  const app = initializeApp(firebaseConfig, "gamja-run-visitor-counter");
-  if (location.hostname === productionHost) {
-    initializeAppCheck(app, {
-      provider: new ReCaptchaEnterpriseProvider(firebaseConfig.appCheckSiteKey),
-      isTokenAutoRefreshEnabled: true,
-    });
-  }
-  const database = getFirestore(app);
   const counterDocument = doc(database, "publicCounters", "gamjaRunSite");
   const firstVisit = location.hostname === productionHost && reserveFirstVisit();
 

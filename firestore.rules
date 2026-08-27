@@ -1,0 +1,106 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function validCounter(data) {
+      return data.keys().hasAll(['count', 'updatedAt']) &&
+        data.keys().hasOnly(['count', 'updatedAt']) &&
+        data.count is int &&
+        data.count >= 1 &&
+        data.updatedAt is timestamp;
+    }
+
+    function validCheerId(cheerId) {
+      return cheerId.matches('[A-Za-z0-9]{20}');
+    }
+
+    function containsBlockedCheerText(text) {
+      return text.matches('.*(http://|https://|HTTP://|HTTPS://|www\\.|WWW\\.|discord\\.gg|DISCORD\\.GG|시발|씨발|ㅅㅂ|병신|ㅂㅅ|개새|좆|지랄|꺼져|죽어).*');
+    }
+
+    function validCheer(data) {
+      return data.keys().hasAll(['message', 'createdAt']) &&
+        data.keys().hasOnly(['message', 'createdAt']) &&
+        data.message is string &&
+        data.message == data.message.trim() &&
+        data.message.size() > 0 &&
+        data.message.size() <= 60 &&
+        !data.message.matches('.*[\\n\\r].*') &&
+        !containsBlockedCheerText(data.message) &&
+        data.createdAt is timestamp &&
+        data.createdAt == request.time;
+    }
+
+    function validCheerRateLimit(data) {
+      return data.keys().hasAll(['lastMessageId', 'lastCreatedAt']) &&
+        data.keys().hasOnly(['lastMessageId', 'lastCreatedAt']) &&
+        data.lastMessageId is string &&
+        validCheerId(data.lastMessageId) &&
+        data.lastCreatedAt is timestamp &&
+        data.lastCreatedAt == request.time;
+    }
+
+    match /publicCounters/{counterId} {
+      allow get: if counterId == 'gamjaRunSite';
+      allow list: if false;
+
+      allow create: if counterId == 'gamjaRunSite' &&
+        validCounter(request.resource.data) &&
+        request.resource.data.count >= 1 &&
+        request.resource.data.updatedAt == request.time;
+
+      allow update: if counterId == 'gamjaRunSite' &&
+        validCounter(resource.data) &&
+        validCounter(request.resource.data) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['count', 'updatedAt']) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasAll(['count', 'updatedAt']) &&
+        request.resource.data.count == resource.data.count + 1 &&
+        request.resource.data.updatedAt == request.time;
+
+      allow delete: if false;
+    }
+
+    match /gamjaRunCheers/{cheerId} {
+      function rateLimitAfter() {
+        return getAfter(/databases/$(database)/documents/gamjaRunCheerRateLimits/$(request.auth.uid));
+      }
+
+      allow get: if true;
+      allow list: if request.query.limit <= 10;
+
+      allow create: if signedIn() &&
+        validCheerId(cheerId) &&
+        validCheer(request.resource.data) &&
+        rateLimitAfter().data.lastMessageId == cheerId &&
+        rateLimitAfter().data.lastCreatedAt == request.time;
+
+      allow update, delete: if false;
+    }
+
+    match /gamjaRunCheerRateLimits/{uid} {
+      allow get: if signedIn() && uid == request.auth.uid;
+      allow list: if false;
+
+      allow create: if signedIn() &&
+        uid == request.auth.uid &&
+        validCheerRateLimit(request.resource.data);
+
+      allow update: if signedIn() &&
+        uid == request.auth.uid &&
+        validCheerRateLimit(request.resource.data) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['lastMessageId', 'lastCreatedAt']) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasAll(['lastMessageId', 'lastCreatedAt']) &&
+        resource.data.lastCreatedAt <= request.time - duration.value(30, 's');
+
+      allow delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
