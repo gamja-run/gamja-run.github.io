@@ -38,7 +38,7 @@ body {
   background-position: 0 0, 0 8px, 8px -8px, -8px 0;
   background-size: 16px 16px;
   color: #111;
-  font-family: "Gulim", "굴림", "Dotum", "돋움", "Malgun Gothic", sans-serif;
+  font-family: "Galmuri11", "Malgun Gothic", sans-serif;
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -87,7 +87,7 @@ a {
   z-index: -1;
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
 }
@@ -132,7 +132,7 @@ a {
   border: 1px solid white;
   background: white;
   color: var(--title-blue);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.55rem;
   font-weight: 900;
 }
@@ -206,26 +206,35 @@ a {
 
 .header-status {
   display: flex;
-  min-width: 250px;
-  min-height: 25px;
-  padding: 2px 6px;
+  min-width: 305px;
+  min-height: 29px;
+  padding: 3px 8px;
   align-items: center;
   justify-content: space-between;
   gap: 0.7rem;
   border: 2px solid;
   border-color: var(--window-dark) white white var(--window-dark);
-  font-family: "Courier New", monospace;
-  font-size: 0.62rem;
+  background: #f4f4f4;
+  color: #111;
+  font-family: "GalmuriMono11", "Consolas", "Cascadia Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
   white-space: nowrap;
 }
 
 .header-status > strong {
-  color: var(--red);
-  font-variant-numeric: tabular-nums;
+  color: #850000;
+}
+
+.header-visitor-count {
+  color: #111;
 }
 
 .header-visitor-count strong {
-  color: var(--title-blue);
+  color: #00006f;
 }
 
 [data-visitor-display][hidden] {
@@ -254,7 +263,7 @@ a {
 .file-path {
   margin: 0 0 0.65rem;
   color: #555;
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.65rem;
 }
 
@@ -267,7 +276,7 @@ a {
   border: 2px inset white;
   background: black;
   color: var(--terminal-green);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.63rem;
 }
 
@@ -281,18 +290,18 @@ a {
 .bbs-label {
   margin: 0 0 1rem;
   color: var(--title-blue);
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
   font-size: 0.7rem;
   font-weight: 900;
 }
 
 .hero h1 {
   margin: 0;
-  font-family: "Gungsuh", "궁서", "Batang", "바탕", serif;
+  font-family: "Galmuri11", "Malgun Gothic", sans-serif;
   font-size: clamp(3.8rem, 7vw, 6rem);
   font-weight: 900;
-  letter-spacing: -0.07em;
-  line-height: 1.02;
+  letter-spacing: -0.035em;
+  line-height: 1.14;
   text-shadow: 4px 4px 0 #c0c0c0;
 }
 
@@ -314,7 +323,7 @@ a {
 .prompt-line {
   margin: 1.2rem 0 0;
   color: #444;
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
   font-size: 0.76rem;
 }
 
@@ -348,7 +357,7 @@ a {
   box-shadow: 1px 1px 0 black;
   color: black;
   cursor: pointer;
-  font-family: "Gulim", "굴림", sans-serif;
+  font-family: "Galmuri11", "Malgun Gothic", sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
 }
@@ -390,7 +399,7 @@ a {
   overflow: hidden;
   background: var(--title-blue);
   color: white;
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.65rem;
   font-weight: 900;
   text-overflow: ellipsis;
@@ -404,7 +413,7 @@ a {
   border: 2px solid;
   border-color: var(--window-dark) white white var(--window-dark);
   background: white;
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-weight: 700;
   line-height: 1.35;
@@ -436,7 +445,7 @@ a {
 .summary-box legend {
   padding: 0 0.5rem;
   color: var(--title-blue);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.67rem;
   font-weight: 900;
 }
@@ -457,14 +466,14 @@ a {
 
 .summary-box dt {
   color: var(--red);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.58rem;
   font-weight: 900;
 }
 
 .summary-box dd {
   margin: 0.25rem 0 0;
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
   font-size: 0.78rem;
   font-weight: 800;
 }
@@ -478,7 +487,7 @@ a {
 .bbs-heading p {
   margin: 0 0 0.5rem;
   color: var(--red);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.62rem;
   font-weight: 900;
 }
@@ -487,11 +496,11 @@ a {
 .recruitment-content h2,
 .terminal-content h2 {
   margin: 0;
-  font-family: "Gungsuh", "궁서", "Batang", serif;
+  font-family: "Galmuri11", "Malgun Gothic", sans-serif;
   font-size: clamp(2rem, 4.5vw, 3.8rem);
   font-weight: 900;
-  letter-spacing: -0.06em;
-  line-height: 1.15;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
 }
 
 .bbs-heading > span {
@@ -583,14 +592,14 @@ a {
   left: calc(100% + 0.15rem);
   color: var(--title-blue);
   content: "===>";
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.72rem;
   transform: translateY(-50%);
 }
 
 .route-list li > span {
   color: var(--red);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -616,7 +625,7 @@ a {
 
 .system-message strong {
   color: var(--red);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.68rem;
 }
 
@@ -642,14 +651,14 @@ a {
 
 .timeline time {
   color: var(--red);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.76rem;
   font-weight: 900;
 }
 
 .timeline li span {
   color: var(--title-blue);
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.6rem;
   font-weight: 900;
 }
@@ -708,7 +717,7 @@ a {
 .role-list li {
   padding: 0.35rem 0;
   border-bottom: 1px dotted #777;
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
   font-size: 0.75rem;
   font-weight: 800;
 }
@@ -728,7 +737,7 @@ a {
   padding: 4px 7px;
   background: #222;
   color: white;
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.66rem;
 }
 
@@ -739,7 +748,7 @@ a {
   border-color: var(--window-dark) white white var(--window-dark);
   background: var(--terminal);
   color: var(--terminal-green);
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
 }
 
 .terminal-content > p {
@@ -750,7 +759,7 @@ a {
 .terminal-content h2 {
   margin-top: 3rem;
   color: white;
-  font-family: "Gungsuh", "궁서", serif;
+  font-family: "Galmuri11", "Malgun Gothic", sans-serif;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   text-shadow: 3px 3px 0 #006600;
 }
@@ -787,7 +796,7 @@ a {
 .cheer-console-header h3 {
   margin: 0;
   color: white;
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.72rem;
   text-shadow: none;
 }
@@ -975,7 +984,7 @@ a {
 
 .readme-content h2 {
   margin: 0;
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
   font-size: 0.88rem;
 }
 
@@ -1008,7 +1017,7 @@ a {
   padding: 0.8rem;
   border: 1px solid black;
   background: white;
-  font-family: "Courier New", "Gulim", monospace;
+  font-family: "GalmuriMono11", "Galmuri11", monospace;
   font-size: 0.68rem;
   font-weight: 800;
 }
@@ -1039,7 +1048,7 @@ a {
 .copyright {
   margin: 0.5rem 0 0;
   color: white;
-  font-family: "Courier New", monospace;
+  font-family: "GalmuriMono11", "Consolas", monospace;
   font-size: 0.55rem;
   text-align: right;
 }
@@ -1153,9 +1162,9 @@ a {
 
   .header-status {
     min-width: 0;
-    padding: 2px 4px;
-    gap: 0.35rem;
-    font-size: 0.53rem;
+    padding: 3px 5px;
+    gap: 0.45rem;
+    font-size: 0.69rem;
   }
 
   .header-visitor-count {
@@ -1273,7 +1282,7 @@ a {
   }
 
   .header-status {
-    font-size: 0.49rem;
+    font-size: 0.65rem;
   }
 
   .header-visitor-count {
