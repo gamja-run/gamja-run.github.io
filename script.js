@@ -32,19 +32,6 @@ function updateHeader() {
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
 
-const revealObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("revealed");
-      observer.unobserve(entry.target);
-    });
-  },
-  { threshold: 0.12 },
-);
-
-document.querySelectorAll("[data-reveal]").forEach((element) => revealObserver.observe(element));
-
 const sectionLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
 const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
@@ -117,27 +104,3 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
     }
   });
 });
-
-function setupImageDialog(dialogSelector, openSelector, closeSelector) {
-  const dialog = document.querySelector(dialogSelector);
-  if (!dialog) return;
-
-  document.querySelectorAll(openSelector).forEach((button) => {
-    button.addEventListener("click", () => dialog.showModal());
-  });
-
-  dialog.querySelector(closeSelector).addEventListener("click", () => dialog.close());
-
-  dialog.addEventListener("click", (event) => {
-    const bounds = dialog.getBoundingClientRect();
-    const outside =
-      event.clientX < bounds.left ||
-      event.clientX > bounds.right ||
-      event.clientY < bounds.top ||
-      event.clientY > bounds.bottom;
-    if (outside) dialog.close();
-  });
-}
-
-setupImageDialog("#posterDialog", "[data-poster-open]", "[data-poster-close]");
-setupImageDialog("#invitationDialog", "[data-invitation-open]", "[data-invitation-close]");
