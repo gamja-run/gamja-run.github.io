@@ -720,9 +720,17 @@ a {
 }
 
 .timeline-highlight time,
-.timeline-highlight span,
 .timeline-highlight p {
   color: white;
+}
+
+.timeline-highlight div > span {
+  display: inline-block;
+  padding: 0.08rem 0.38rem;
+  border: 1px solid white;
+  background: white;
+  color: var(--title-blue);
+  line-height: 1.35;
 }
 
 .recruitment-content {
