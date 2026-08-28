@@ -297,7 +297,7 @@ a {
 
 .text-mode-badge {
   display: flex;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   padding: 0.45rem 0.6rem;
   flex-wrap: wrap;
   gap: 0.4rem 1.2rem;
@@ -306,6 +306,37 @@ a {
   color: var(--terminal-green);
   font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
   font-size: 0.9rem;
+}
+
+.unofficial-notice {
+  display: flex;
+  margin-bottom: 2.5rem;
+  padding: 0.85rem 1rem;
+  align-items: center;
+  gap: 0.45rem 1rem;
+  border: 2px solid;
+  border-color: white black black white;
+  outline: 1px solid var(--window-dark);
+  background: var(--warning);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.unofficial-notice strong {
+  color: #780000;
+  font-size: 1rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.unofficial-notice span {
+  display: block;
+  min-width: 0;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .hero-grid {
@@ -1349,6 +1380,17 @@ a {
   .text-mode-badge {
     display: grid;
     gap: 0.2rem;
+  }
+
+  .unofficial-notice {
+    width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .unofficial-notice span {
+    width: 100%;
   }
 
   .hero h1 {
