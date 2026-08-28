@@ -1128,6 +1128,169 @@ a {
   text-align: right;
 }
 
+/* Cancellation notice */
+.cancellation-status {
+  min-width: 300px;
+}
+
+.cancellation-status > strong {
+  color: #a00000;
+  letter-spacing: 0.06em;
+}
+
+.cancellation-document {
+  background: var(--paper);
+}
+
+.cancellation-hero {
+  padding: clamp(3.5rem, 7vw, 6rem) clamp(1.25rem, 7vw, 6.5rem) clamp(3rem, 6vw, 5rem);
+  border-bottom: 4px double #111;
+  background:
+    linear-gradient(rgba(255, 254, 247, 0.94), rgba(255, 254, 247, 0.94)),
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(0, 0, 128, 0.11) 31px 32px);
+}
+
+.notice-kicker,
+.section-number {
+  margin: 0 0 0.8rem;
+  color: var(--red);
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+}
+
+.cancellation-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 1.2;
+  text-shadow: 4px 4px 0 #c0c0c0;
+}
+
+.cancelled-banner {
+  width: fit-content;
+  margin-top: 2.2rem;
+  padding: 0.85rem 1.15rem;
+  border: 2px solid;
+  border-color: white black black white;
+  outline: 2px solid #8a0000;
+  background: #fff0a6;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.24);
+  color: #8a0000;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 900;
+}
+
+.notice-content {
+  width: min(900px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 6rem) 0;
+}
+
+.notice-intro {
+  margin-bottom: 1.5rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 2px solid;
+  border-color: var(--window-dark) white white var(--window-dark);
+  background: #f1f1ed;
+  font-size: 1.08rem;
+}
+
+.notice-intro p,
+.fact-section p,
+.cancellation-section p {
+  line-height: 1.9;
+}
+
+.notice-intro p:first-child {
+  margin-top: 0;
+}
+
+.notice-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.fact-section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  border-bottom: 1px dashed #666;
+  scroll-margin-top: 110px;
+}
+
+.fact-section h2,
+.cancellation-section h2 {
+  margin: 0 0 2rem;
+  font-family: "SchoolSafetyChalkboardEraser", "Malgun Gothic", sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
+.fact-section > p:not(.section-number),
+.cancellation-section > p:not(.section-number) {
+  margin: 1.15rem 0;
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+}
+
+.reference-box {
+  margin: 2rem 0;
+  padding: 1.2rem 1.35rem;
+  border: 2px solid;
+  border-color: white black black white;
+  outline: 1px solid #777;
+  background: var(--window);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.18);
+}
+
+.reference-box strong {
+  color: var(--title-blue);
+  font-weight: 900;
+}
+
+.reference-box ul {
+  margin: 0.8rem 0 0;
+  padding-left: 1.35rem;
+}
+
+.reference-box li + li {
+  margin-top: 0.45rem;
+}
+
+.reference-box a {
+  color: #00006f;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.cancellation-section {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  scroll-margin-top: 110px;
+  border: 3px double #780000;
+  background: #fff4a8;
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.22);
+}
+
+.cancellation-section h2 {
+  color: #780000;
+}
+
+.final-statement {
+  margin-top: 2rem !important;
+  padding-top: 1.5rem;
+  border-top: 2px solid #780000;
+  font-weight: 900;
+}
+
+.cancellation-footer {
+  margin-top: 1rem;
+}
+
 .toast {
   position: fixed;
   bottom: 1rem;
@@ -1439,5 +1602,57 @@ a {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .cancellation-status {
+    min-width: 0;
+  }
+
+  .cancellation-status span {
+    display: none;
+  }
+
+  .cancellation-hero {
+    padding: 3rem 1rem;
+  }
+
+  .cancellation-hero h1 {
+    font-size: clamp(2.45rem, 11vw, 4rem);
+    text-shadow: 3px 3px 0 #c0c0c0;
+  }
+
+  .cancelled-banner {
+    width: 100%;
+  }
+
+  .notice-content {
+    width: calc(100% - 2rem);
+    padding: 3rem 0;
+  }
+
+  .fact-section h2,
+  .cancellation-section h2 {
+    font-size: clamp(1.75rem, 7vw, 2.25rem);
+  }
+
+  .cancellation-footer {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .cancellation-status {
+    font-size: 0.76rem;
+  }
+
+  .notice-content {
+    width: calc(100% - 1.5rem);
+  }
+
+  .notice-intro,
+  .cancellation-section {
+    padding: 1.1rem;
   }
 }

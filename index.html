@@ -3,58 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="개인 유저가 주최하는 비공식 라라펠 이벤트, 감자데이 대행진 안내 페이지입니다. 파이널판타지14 공식 행사와 무관합니다."
-    />
+    <meta name="description" content="감자데이 대행진 취소 및 사실관계 안내입니다." />
     <meta name="theme-color" content="#008080" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:locale" content="ko_KR" />
-    <meta property="og:title" content="[비공식 유저 이벤트] 감자데이 대행진" />
+    <meta property="og:title" content="감자데이 대행진 취소 및 사실관계 안내" />
     <meta
       property="og:description"
-      content="8월 30일 20:30 초코보 서버 중부 라노시아에서 열리는 개인 유저 주최 행사입니다. 공식 행사와 무관합니다."
+      content="8월 30일 예정이었던 감자데이 대행진을 취소합니다. 행사와 관련해 제기된 내용의 사실관계를 함께 안내드립니다."
     />
     <meta property="og:url" content="https://gamja-run.github.io/" />
-    <meta property="og:site_name" content="감자데이 | 비공식 유저 이벤트" />
-    <meta
-      property="og:image"
-      content="https://gamja-run.github.io/social-preview-20260828-unofficial.png"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://gamja-run.github.io/social-preview-20260828-unofficial.png"
-    />
+    <meta property="og:site_name" content="감자데이 대행진" />
+    <meta property="og:image" content="https://gamja-run.github.io/social-preview-cancellation.png" />
+    <meta property="og:image:secure_url" content="https://gamja-run.github.io/social-preview-cancellation.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="윈도우 메모장 스타일로 만든 비공식 유저 이벤트 감자데이 대행진 안내 화면"
-    />
+    <meta property="og:image:alt" content="감자데이 대행진 취소 및 사실관계 안내" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://gamja-run.github.io/social-preview-20260828-unofficial.png" />
-    <meta
-      name="twitter:image:alt"
-      content="윈도우 메모장 스타일로 만든 비공식 유저 이벤트 감자데이 대행진 안내 화면"
-    />
-    <title>[비공식 유저 이벤트] 감자데이_대행진_안내.txt - 메모장</title>
+    <meta name="twitter:title" content="감자데이 대행진 취소 및 사실관계 안내" />
+    <meta name="twitter:description" content="8월 30일 예정이었던 감자데이 대행진을 취소합니다." />
+    <meta name="twitter:image" content="https://gamja-run.github.io/social-preview-cancellation.png" />
+    <title>감자데이_취소_및_사실관계_안내.txt - 메모장</title>
     <link rel="canonical" href="https://gamja-run.github.io/" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <script type="module" src="visitor-counter.js"></script>
-    <script type="module" src="cheer-board.js"></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main">본문으로 바로가기</a>
-    <p class="desktop-watermark" aria-hidden="true">GAMJA-RUN / TEXT MODE</p>
+    <p class="desktop-watermark" aria-hidden="true">GAMJA-RUN / NOTICE MODE</p>
 
     <header class="site-header" id="siteHeader">
       <div class="window-titlebar">
-        <a class="brand" href="#top" aria-label="감자데이 홈으로 이동">
+        <a class="brand" href="#top" aria-label="취소 안내 처음으로 이동">
           <span class="brand-icon" aria-hidden="true">TXT</span>
-          <strong>감자데이_대행진_안내.txt - 메모장</strong>
+          <strong>감자데이_취소_및_사실관계_안내.txt - 메모장</strong>
         </a>
         <div class="window-controls" aria-hidden="true">
           <span>_</span><span>□</span><span>×</span>
@@ -73,316 +57,98 @@
           메뉴(M)
         </button>
 
-        <nav class="site-nav" id="siteNav" aria-label="주요 메뉴">
-          <a href="#about">소개(A)</a>
-          <a href="#info">행사 정보(I)</a>
-          <a href="#route">행진 안내(R)</a>
-          <a href="#timeline">타임라인(T)</a>
-          <a href="#recruitment">요원 모집(S)</a>
-          <a href="#cheers">응원(C)</a>
-          <a href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">Discord(D)</a>
+        <nav class="site-nav" id="siteNav" aria-label="공지 메뉴">
+          <a href="#notice">안내문(N)</a>
+          <a href="#facts">사실관계(F)</a>
+          <a href="#cancellation">행사 취소(C)</a>
         </nav>
 
-        <div class="header-status" role="timer" aria-label="감자데이 행사 시작까지 남은 시간" aria-live="off">
-          <strong data-header-countdown>D-0 · 00:00:00</strong>
-          <span class="header-visitor-count" data-visitor-display hidden>
-            VISITOR=<strong data-visitor-count>—</strong>
-          </span>
+        <div class="header-status cancellation-status" aria-label="행사 취소됨">
+          <strong>EVENT CANCELLED</strong>
+          <span>2026-08-28</span>
         </div>
       </div>
     </header>
 
-    <main class="notepad-document" id="main">
-      <section class="hero notepad-section" id="about" aria-labelledby="heroTitle">
-        <p class="file-path">C:\GAMJA_RUN\EVENT\NOTICE.TXT</p>
-        <div class="text-mode-badge">
-          <span>HTML, CSS, JavaScript ONLY</span>
-        </div>
-
-        <div class="unofficial-notice" role="note" aria-label="비공식 유저 이벤트 안내">
-          <strong>[ 비공식 유저 이벤트 ]</strong>
-          <span>개인 유저가 주최하는 비공식 행사입니다.<br />파이널판타지14 공식 행사와 무관합니다.</span>
-        </div>
-
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="bbs-label">[ 비공식 유저 이벤트 / 2026-08-30 / 조회수 갱신 중 ]</p>
-            <h1 id="heroTitle">감자데이<br /><span>대행진 이벤트</span></h1>
-            <p class="hero-description">
-              작고 귀여운 라라펠들이 한자리에 모여<br />함께 걷고, 포즈를 취하고, 스크린샷을 찍어요.
-            </p>
-            <p class="prompt-line">&gt; 늦게 와도 언제든 합류할 수 있습니다.<span aria-hidden="true">_</span></p>
-
-            <div class="hero-actions">
-              <a class="win-button win-button-default" href="#info">[ 행사 정보 보기 ]</a>
-              <a class="win-button" href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">
-                [ Discord 접속 ]
-              </a>
-            </div>
-          </div>
-
-          <aside class="ascii-panel" aria-label="감자 런 출발 준비 완료">
-            <div class="ascii-panel-title">ASCII_POTATO.TXT</div>
-            <pre aria-hidden="true">
-       _______
-    .-'       '-.
-   /   o     o   \
-  |       ^       |
-   \    '---'    /
-    '._       _.'
-       '-----'</pre
-            >
-            <p>( •̀ ᴖ •́ ) &lt; 감자 런 출발 준비 완료!</p>
-            <small>어서 오세요. 다 같이 재밌게 놀아요.</small>
-          </aside>
-        </div>
-
-        <fieldset class="summary-box">
-          <legend>EVENT_INFO.ini</legend>
-          <dl>
-            <div><dt>DATE</dt><dd>2026-08-30 (SUN) 20:30</dd></div>
-            <div><dt>SERVER</dt><dd>CHOCOBO</dd></div>
-            <div><dt>MEET</dt><dd>중부 라노시아</dd></div>
-          </dl>
-        </fieldset>
-      </section>
-
-      <section class="notepad-section" id="info" aria-labelledby="infoTitle">
-        <header class="bbs-heading">
-          <p>NO.01 / EVENT_INFORMATION</p>
-          <h2 id="infoTitle">[ 출발 전에 확인해 주세요 ]</h2>
-          <span>원활한 진행을 위해 행사 시작 10분 전까지 도착해 주세요.</span>
+    <main class="notepad-document cancellation-document" id="main">
+      <article id="notice" aria-labelledby="noticeTitle">
+        <header class="cancellation-hero">
+          <p class="file-path">C:\GAMJA_RUN\NOTICE\CANCELLATION.TXT</p>
+          <p class="notice-kicker">[ NOTICE / 2026-08-28 ]</p>
+          <h1 id="noticeTitle">감자데이 대행진<br />취소 및 사실관계 안내</h1>
+          <div class="cancelled-banner" role="status">8월 30일 예정 행사는 취소되었습니다.</div>
         </header>
 
-        <div class="info-grid">
-          <article class="dialog-box dialog-box-focus">
-            <div class="dialog-title">01_DATE_TIME.TXT</div>
-            <div class="dialog-content">
-              <p>날짜 및 시간</p>
-              <h3>8월 30일 (일)<br /><strong>20:30</strong></h3>
-              <small>※ 20:20까지 도착 권장</small>
-            </div>
-          </article>
-
-          <article class="dialog-box">
-            <div class="dialog-title">02_MEETING_POINT.TXT</div>
-            <div class="dialog-content">
-              <p>서버 · 집합 장소</p>
-              <h3>초코보 서버<br /><strong>중부 라노시아</strong></h3>
-              <small>림사 로민사 하층갑판 입구</small>
-              <button
-                class="win-button mini-button"
-                type="button"
-                data-copy="초코보 서버 · 중부 라노시아 (림사 로민사 하층갑판 입구)"
-              >
-                [ 장소 복사 ]
-              </button>
-            </div>
-          </article>
-
-          <article class="dialog-box">
-            <div class="dialog-title">03_JOIN_METHOD.TXT</div>
-            <div class="dialog-content">
-              <p>참여 방법</p>
-              <h3>집합 장소에서<br /><strong>자유롭게 합류</strong></h3>
-              <small>다른 서버 유저도 참여할 수 있습니다.</small>
-            </div>
-          </article>
-
-          <article class="dialog-box">
-            <div class="dialog-title">04_FASHION_ITEM.TXT</div>
-            <div class="dialog-content">
-              <p>권장 패션 소품</p>
-              <h3>가볍게 메는<br /><strong>배낭</strong></h3>
-              <small>없어도 전혀 상관없습니다.</small>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="notepad-section section-gray" id="route" aria-labelledby="routeTitle">
-        <header class="bbs-heading">
-          <p>NO.02 / PARADE_ROUTE</p>
-          <h2 id="routeTitle">[ 천천히 걷고, 중간중간 함께 찰칵! ]</h2>
-          <span>세부 경로와 촬영 지점은 현장에서 안내합니다.</span>
-        </header>
-
-        <ol class="route-list">
-          <li><span>[01]</span><strong>출발</strong><small>중부 라노시아</small></li>
-          <li><span>[02]</span><strong>행진</strong><small>다 함께 천천히</small></li>
-          <li><span>[03]</span><strong>5분 휴식</strong><small>잠깐 쉬어가기</small></li>
-          <li><span>[04]</span><strong>단체사진</strong><small>포즈 맞추기</small></li>
-          <li><span>[05]</span><strong>도착</strong><small>마지막 스크린샷</small></li>
-        </ol>
-
-        <div class="system-message">
-          <strong>! SYSTEM MESSAGE</strong>
-          <p>늦게 도착해도 괜찮습니다. 행진 중인 감자 행렬을 발견하면 자연스럽게 합류해 주세요.</p>
-        </div>
-      </section>
-
-      <section class="notepad-section" id="timeline" aria-labelledby="timelineTitle">
-        <header class="bbs-heading">
-          <p>NO.03 / EVENT_TIMELINE</p>
-          <h2 id="timelineTitle">[ 행사 당일 진행 순서 ]</h2>
-          <span>현장 상황에 따라 시간은 조금 달라질 수 있습니다.</span>
-        </header>
-
-        <ol class="timeline">
-          <li>
-            <time datetime="2026-08-30T20:00:00+09:00">20:00 - 20:10</time>
-            <div><span>STAFF_ONLY</span><h3>진행요원 최종 브리핑</h3><p>파티찾기 개설 및 디스코드 소통을 준비합니다.</p></div>
-          </li>
-          <li>
-            <time datetime="2026-08-30T20:10:00+09:00">20:10 - 20:20</time>
-            <div><span>GATHER</span><h3>참가자 집합 및 개회 안내</h3><p>안내요원은 각자 길 안내 포인트로 미리 이동합니다.</p></div>
-          </li>
-          <li class="timeline-highlight">
-            <time datetime="2026-08-30T20:30:00+09:00">20:30 - 21:30</time>
-            <div><span>PARADE</span><h3>대행진 &amp; 포토타임</h3><p>행진 사이사이 스크린샷을 촬영하고 단체 사진을 남깁니다.</p></div>
-          </li>
-          <li>
-            <time datetime="2026-08-30T21:30:00+09:00">21:30 - 21:35</time>
-            <div><span>FINALE</span><h3>최종 목적지 도착</h3><p>마지막 단체 스크린샷을 촬영하고 행사를 마무리합니다.</p></div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="notepad-section section-gray" id="recruitment" aria-labelledby="recruitmentTitle">
-        <div class="recruitment-window">
-          <div class="dialog-title">STAFF_RECRUITMENT.EXE</div>
-          <div class="recruitment-content">
-            <div>
-              <p class="bbs-label">[ 진행요원 모집 중 ]</p>
-              <h2 id="recruitmentTitle">함께 굴러갈 감자 요원을 찾습니다.</h2>
-              <p>처음이어도 괜찮습니다. 작은 열정과 배려만 챙겨 와 주세요.</p>
-            </div>
-            <ul class="role-list" aria-label="모집 분야">
-              <li>[ ] 진행 리더</li>
-              <li>[ ] 사진작가</li>
-              <li>[ ] 길안내</li>
-              <li>[ ] 대열 관리</li>
-              <li>[ ] 공지 전달</li>
-            </ul>
-            <a class="win-button win-button-default" href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">
-              [ 지원 및 문의 ]
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="terminal-section" id="cheers" aria-labelledby="closingTitle">
-        <div class="terminal-title">C:\GAMJA_RUN&gt; gamja-run.exe</div>
-        <div class="terminal-content">
-          <p>Initializing Lalafell Parade ................................ [ OK ]</p>
-          <p>Loading generated image assets .............................. [ 0 FILES ]</p>
-          <p>Loading HTML / CSS / JavaScript ............................. [ OK ]</p>
-          <h2 id="closingTitle">우리, 라노시아에서 함께 걸어요.</h2>
-          <p>반응이 좋다면 다음 감자데이도 다시 찾아올 예정입니다.</p>
-          <div
-            class="visitor-counter"
-            data-visitor-counter
-            data-visitor-display
-            role="status"
-            aria-live="polite"
-            aria-busy="true"
-          >
-            &gt; 지금까지 감자 <strong data-visitor-count>—</strong>명이 다녀갔습니다.
+        <div class="notice-content">
+          <div class="notice-intro">
+            <p>안녕하세요. 감자데이 대행진 주최자입니다.</p>
+            <p><strong>먼저 이번 행사 취소는 제기된 의혹을 인정한다는 의미가 아님을 분명히 말씀드립니다.</strong></p>
+            <p>행사와 관련해 사실과 다른 내용이 확산되고 있어, 취소 안내에 앞서 실제 제작 과정을 간략하게 설명드립니다.</p>
           </div>
 
-          <section class="cheer-console" aria-labelledby="cheerTitle">
-            <div class="cheer-console-header">
-              <h3 id="cheerTitle">CHEER_LOG.TXT</h3>
-              <button class="cheer-refresh-button" type="button" data-cheer-refresh>[ 새 글 확인 ]</button>
-            </div>
+          <div id="facts">
+            <section class="fact-section" aria-labelledby="fact1Title">
+              <p class="section-number">01 / AI 학습 관련</p>
+              <h2 id="fact1Title">파이널판타지14 자료를 AI 학습에 사용했다는 주장에 대하여</h2>
+              <p>파이널판타지14의 공식 일러스트나 게임 스크린샷을 AI 모델의 학습 자료로 제공한 사실은 없습니다.</p>
+              <p>초기 생성형 홍보 이미지는 파이널판타지14 이미지나 공식 일러스트를 생성형 이미지의 입력 자료로 사용하지 않고, 행사 콘셉트를 설명하는 텍스트 요청만으로 제작했습니다.</p>
+              <p>사이트에 한때 배치했던 캐릭터 스크린샷은 기존 이미지의 배경을 제거해 페이지에 배치하기 위한 편집 자료였으며, 새로운 홍보 이미지를 생성하거나 AI 모델을 학습시키기 위한 자료로 사용하지 않았습니다.</p>
+            </section>
 
-            <div class="cheer-log" data-cheer-log>
-              <p class="cheer-empty" data-cheer-empty>&gt; 아직 등록된 응원이 없습니다.</p>
-              <ol class="cheer-list" data-cheer-list aria-live="polite" aria-busy="true"></ol>
-            </div>
+            <section class="fact-section" aria-labelledby="fact2Title">
+              <p class="section-number">02 / 공식 계정·홈페이지 관련</p>
+              <h2 id="fact2Title">공식 X 계정과 공식 이벤트 홈페이지를 모방했다는 주장에 대하여</h2>
+              <p>파이널판타지14 공식 X 계정의 게시물이나 공식 이벤트 홈페이지를 참고하거나 모방하지 않았습니다.</p>
+              <p>이번 행사를 준비하면서 처음으로 X 계정을 만들었으며, 계정 개설 당시에는 한국 공식 X 계정의 존재나 공지 방식을 알지 못했습니다. 공식 홈페이지의 화면, 코드, 이미지 배치 또는 UI 역시 제작 자료로 사용하지 않았습니다.</p>
+              <p>다만 초기 표현이 공식 행사처럼 보일 수 있다는 의견은 받아들여, 이후 모든 안내와 웹사이트 최상단에 개인 유저가 주최하는 비공식 행사이며 공식 행사와 무관하다는 점을 명시했습니다.</p>
+            </section>
 
-            <form class="cheer-form" data-cheer-form>
-              <label class="cheer-prompt">
-                <span>C:\GAMJA_RUN&gt;</span>
-                <input
-                  type="text"
-                  name="cheer"
-                  maxlength="60"
-                  autocomplete="off"
-                  placeholder="응원의 글을 입력하세요"
-                  aria-label="응원의 글"
-                  data-cheer-input
-                  required
-                />
-              </label>
-              <div class="cheer-form-statusbar">
-                <span role="status" aria-live="polite" data-cheer-status>익명으로 안전하게 등록됩니다.</span>
-                <span data-cheer-length>0 / 60</span>
-                <button class="cheer-submit-button" type="submit" data-cheer-submit>[ 전송 ]</button>
+            <section class="fact-section" aria-labelledby="fact3Title">
+              <p class="section-number">03 / 공식 정책 관련</p>
+              <h2 id="fact3Title">스퀘어에닉스가 모든 개인적 AI 이용을 금지했다는 주장에 대하여</h2>
+              <p>2026년 8월 28일 현재 확인한 공식 정책에서는 개인적·비영리적 AI 이용 전체를 일괄적으로 금지한다는 조항을 확인하지 못했습니다.</p>
+              <p>공식 팬 페스티벌 미술 공모전과 같이 특정 공모전의 출품작에 AI 사용을 금지하는 규정은 확인했습니다. 그러나 이는 해당 공모전 출품작에 적용되는 규정이며, 모든 개인적 이용을 금지한다는 내용은 아니었습니다.</p>
+              <div class="reference-box">
+                <strong>참고한 공식 자료</strong>
+                <ul>
+                  <li><a href="https://www.ff14.co.kr/support/policy" target="_blank" rel="noopener noreferrer">파이널판타지14 한국 운영정책</a></li>
+                  <li><a href="https://support.na.square-enix.com/rule.php?id=5382&amp;la=1&amp;tag=authc" target="_blank" rel="noopener noreferrer">글로벌 FFXIV Materials Usage License</a></li>
+                  <li><a href="https://fanfest-na.finalfantasyxiv.com/2026/en-us/news/art-contest" target="_blank" rel="noopener noreferrer">FFXIV Fan Festival 2026 Art Contest 공식 규정</a></li>
+                </ul>
               </div>
-            </form>
+              <p>제가 확인하지 못한 공식 정책이나 발언이 있다면 원문 링크를 전달해 주시기 바랍니다. 공식 출처가 확인될 경우 내용을 검토하여 필요한 수정과 사과를 진행하겠습니다.</p>
+            </section>
 
-            <p class="cheer-policy">
-              ※ 30초에 한 번 · 최대 60자 · 링크와 연락처 입력 금지 · 불편한 글은 [ 가리기 ]
-            </p>
-          </section>
-
-          <div class="closing-actions">
-            <a class="terminal-button" href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">
-              [ DISCORD 접속 ]
-            </a>
-            <a class="terminal-button" href="#top">[ 맨 위로 ]</a>
+            <section class="fact-section" aria-labelledby="fact4Title">
+              <p class="section-number">04 / 아카라이브 관련</p>
+              <h2 id="fact4Title">아카라이브 계정 및 활동 의혹에 대하여</h2>
+              <p>저는 아카라이브 계정을 보유하고 있지 않으며, 해당 커뮤니티에서 개인적으로 활동하거나 직접 게시물을 작성한 사실도 없습니다.</p>
+              <p>확인 결과, 행사 홍보 과정에서 다른 행사 관계자가 지인의 계정을 통해 홍보글을 1회 게시한 뒤 삭제한 사실은 있습니다. 해당 글은 제가 직접 작성하거나 게시한 글은 아니지만, 행사와 관련해 게시된 글인 만큼 이 사실을 숨기지 않고 함께 안내드립니다.</p>
+              <p>다만 이 한 차례의 행사 홍보글을 근거로 제가 아카라이브 이용자이거나 해당 커뮤니티에서 지속적으로 활동해 왔다고 단정하는 내용은 사실과 다릅니다.</p>
+            </section>
           </div>
+
+          <section class="cancellation-section" id="cancellation" aria-labelledby="cancellationTitle">
+            <p class="section-number">FINAL / 행사 취소 안내</p>
+            <h2 id="cancellationTitle">행사 취소 안내</h2>
+            <p>그럼에도 행사 준비 과정에서 사실관계가 확인되지 않은 주장과 조롱이 계속 확산되었고, 주최자가 감당하기 어려운 수준의 심리적·운영상 부담이 발생했습니다.</p>
+            <p>현재 상태로 행사를 강행하는 것은 참가자분들께도 책임 있는 선택이 아니라고 판단하여, <strong>8월 30일 예정이었던 감자데이 대행진을 취소합니다.</strong></p>
+            <p>행사를 기다려 주시고 참여를 준비해 주신 분들께 진심으로 죄송합니다.</p>
+            <p>이번 결정과 관련해 특정 개인이나 집단을 찾아가 비난하거나 공격하는 일은 원하지 않습니다. 추측과 갈등이 더 이어지지 않도록 부탁드립니다.</p>
+            <p>이번 일을 계기로, 선의로 시작한 유저 행사에 대해서는 정당한 의견과 비판이 오가되 확인되지 않은 추측이나 개인을 향한 조롱으로 이어지지 않기를 바랍니다. 누구나 부담 없이 새로운 행사를 제안하고 참여할 수 있는 커뮤니티 문화가 계속 이어졌으면 합니다.</p>
+            <p class="final-statement">이 글을 마지막으로 관련 논쟁에 대한 추가 대응은 하지 않겠습니다.</p>
+          </section>
         </div>
-      </section>
+      </article>
     </main>
 
-    <footer class="site-footer">
-      <section class="readme-window" aria-labelledby="disclosureTitle">
-        <div class="dialog-title">README_AI_POLICY.TXT</div>
-        <div class="readme-content">
-          <h2 id="disclosureTitle">[ 웹사이트 제작 방식 및 AI 사용 범위 안내 ]</h2>
-          <dl>
-            <div>
-              <dt>01. 웹사이트 개발 환경</dt>
-              <dd>본 웹사이트의 모든 코드와 디자인 및 레이아웃은 OpenAI Codex를 활용하여 제작되었습니다.</dd>
-            </div>
-            <div>
-              <dt>02. 이미지 자산 사용</dt>
-              <dd>생성형 이미지 자산을 사용하지 않았습니다. 보이는 도형은 HTML과 CSS, 보이는 감자는 문자입니다.</dd>
-            </div>
-            <div>
-              <dt>03. 저작권 및 데이터 보안</dt>
-              <dd>
-                파이널판타지14의 공식 일러스트, 인게임 3D 모델링, BGM 등 공식 IP 자산은 생성 프롬프트 및 학습
-                데이터로 일절 입력/사용되지 않았습니다. (유료 보안 정책 적용 및 데이터 학습 거부/Opt-Out 완료)
-              </dd>
-            </div>
-            <div>
-              <dt>04. 운영 목적</dt>
-              <dd>
-                파이널판타지14 공식 행사와 무관한 개인 유저 주최 비공식 행사이며, 저작물 이용 가이드라인을
-                준수하는 비영리 유저 이벤트 안내를 위해 운영됩니다.
-              </dd>
-            </div>
-          </dl>
-          <p class="plain-text-declaration">
-            ※ 페이지 본문 JPG/PNG/WEBP: 0 / 생성형 이미지: 0<br />
-            ※ 공유용 PNG 1장은 이 HTML/CSS 화면을 브라우저로 캡처했습니다.<br />
-            ※ 코드 생성 도구 사용과 생성형 이미지 사용은 동일한 항목이 아닙니다.<br />
-            ※ 혹시 그림처럼 보이는 것이 있다면 전부 CSS 테두리와 문자입니다.
-          </p>
-        </div>
-      </section>
-
+    <footer class="site-footer cancellation-footer">
       <div class="footer-statusbar">
-        <span>감자데이 대행진 이벤트</span>
-        <span>HTML 1문서 / CSS 1문서 / JS 2문서</span>
-        <a href="https://discord.gg/Qdew4FaaSQ" target="_blank" rel="noopener noreferrer">Discord 서버</a>
+        <span>감자데이 대행진</span>
+        <span>취소 및 사실관계 안내</span>
+        <a href="#top">문서 처음으로</a>
       </div>
       <p class="copyright">FINAL FANTASY XIV © SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     </footer>
-
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>
 </html>
